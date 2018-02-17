@@ -1,19 +1,6 @@
-class Point {
-  private x: number;
-  private y: number;
-  draw() {
-    console.log('X: ' + this.x + ', Y: ' + this.y);
-  }
-  constructor(x?:number,y?:number){
-    this.x = x;
-    this.y = y;
-  }
-}
 
-let point = new Point(1,2);
-point.draw();
+import { LikeComponent } from './like.component';
 
-// access modifiers
-// - public (default)
-// - private
-// - protected
+let component = new LikeComponent(10, true);
+component.onClick();
+console.log(`likesCount: ${component.likesCount}, isSelected: ${component.isSelected}`)
