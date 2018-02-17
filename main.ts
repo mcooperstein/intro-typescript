@@ -1,10 +1,10 @@
-//arrow functions
-let log = function(message){
-console.log(message);
+class Point {
+  x: number;
+  y: number;
+  draw() {
+    // ...
+  }
+  getDistance(another:Point){
+    // ...
+  }
 }
-
-let doLog = (message) => {
-  console.log(message);
-}
-
-let doLog2 = (message) => console.log(message);
